@@ -79,7 +79,7 @@
 /**
 test alternative 1..n param with ...args
 
-@method testrestparam0n
+@method testrestparam1n
 @param {String} ...multiple my desc
 @returns something without a type
 **/
@@ -87,7 +87,7 @@ test alternative 1..n param with ...args
 /**
 test alternative 0..n param with ...args
 
-@method testrestparam1n
+@method testrestparam0n
 @param {String} [...multiple] my desc
 @returns something without a type
 **/
