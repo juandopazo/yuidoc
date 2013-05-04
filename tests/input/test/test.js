@@ -76,6 +76,22 @@
  * @returns something without a type
  */
 
+/**
+test alternative 1..n param with ...args
+
+@method testrestparam0n
+@param {String} ...multiple my desc
+@returns something without a type
+**/
+
+/**
+test alternative 0..n param with ...args
+
+@method testrestparam1n
+@param {String} [...multiple] my desc
+@returns something without a type
+**/
+
     /**
      * Testing really long param description paring
      * @method reallyLongParamDesc

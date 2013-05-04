@@ -273,6 +273,19 @@ suite.add(new YUITest.TestCase({
         Assert.isTrue(item2.params[0].multiple, 'Multiple not set');
         Assert.isUndefined(item2.return.type, 'Type should be missing');
 
+        var item3 = this.findByName('testrestparam0n', 'myclass');
+        Assert.isArray(item3.params, 'Params should be an array');
+        Assert.areSame(1, item3.params.length, 'Failed to parse all 5 parameters');
+        Assert.isTrue(item3.params[0].optional, 'Optional not set');
+        Assert.isTrue(item3.params[0].multiple, 'Multiple not set');
+        Assert.isUndefined(item3.return.type, 'Type should be missing');
+
+        var item4 = this.findByName('testrestparam1n', 'myclass');
+        Assert.isArray(item4.params, 'Params should be an array');
+        Assert.areSame(1, item4.params.length, 'Failed to parse all 5 parameters');
+        Assert.isUndefined(item4.params[0].optional, 'Optional should not be set');
+        Assert.isTrue(item4.params[0].multiple, 'Multiple not set');
+        Assert.isUndefined(item4.return.type, 'Type should be missing');
     },
     'test: object parameters': function() {
         var item = this.findByName('testobjectparam', 'myclass');
